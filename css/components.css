@@ -553,6 +553,13 @@ select.form-control {
   transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
+.social-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  display: block;
+}
+
 .social-btn:hover {
   background-color: #a4f29a;
   color: #143321;
