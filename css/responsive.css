@@ -1,0 +1,200 @@
+/* ==========================================================================
+   Optivize AI - Responsive Stylesheet (css/responsive.css)
+   Breakpoints & Media Queries for Tablet and Mobile Layouts
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LAPTOP / SMALL DESKTOP (Max Width: 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  :root {
+    --section-padding-y: 60px;
+    --container-width: 960px;
+  }
+
+  h1 {
+    font-size: 2.85rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .hero-dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 24px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+  .newsletter-box {
+    grid-column: span 2;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. TABLET & MOBILE (Max Width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --section-padding-y: 48px;
+  }
+
+  h1 {
+    font-size: 2.15rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  /* Grid Stack to 1 Column */
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .hero-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Pure CSS Checkbox Mobile Navigation Menu */
+  .nav-pill-wrapper {
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px 20px;
+    gap: 16px;
+    border-bottom: 1px solid var(--border-light);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+    display: none;
+  }
+
+  /* When checkbox is checked, show mobile dropdown */
+  .nav-toggle-checkbox:checked ~ .nav-pill-wrapper .nav-menu {
+    display: flex;
+  }
+
+  /* Hamburger icon animation when open */
+  .nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(1) {
+    transform: translateY(10.5px) rotate(45deg);
+  }
+
+  .nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle-checkbox:checked ~ .nav-toggle-label span:nth-child(3) {
+    transform: translateY(-10.5px) rotate(-45deg);
+  }
+
+  .nav-cta-desktop {
+    display: none;
+  }
+
+  .nav-cta-mobile {
+    display: block;
+    margin-top: 8px;
+  }
+
+  /* Hero Section Mobile Adjustments */
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  /* Feature Block Reversal & Stacking */
+  .feature-block {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    gap: 28px;
+  }
+
+  .feature-block .icon-box,
+  .feature-block .icon-badge-green {
+    margin: 0 auto 16px auto;
+  }
+
+  /* Payment & Form Cards */
+  .checkout-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-brand,
+  .newsletter-box {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. SMALL MOBILE (Max Width: 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.85rem;
+  }
+
+  .card {
+    padding: 20px 16px;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+  }
+}
