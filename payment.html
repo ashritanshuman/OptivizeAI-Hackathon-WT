@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete your Optivize AI subscription checkout securely. Choose from Starter, Pro, or Enterprise plans.">
+  <title>Subscription Checkout & Payment — Optivize AI</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Header Nav -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Optivize AI Homepage">
+        <div class="brand-logo-icon">O</div>
+        <span>Optivize AI</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="payment.html" class="nav-link active">Pricing</a></li>
+        <li><a href="login.html" class="nav-link">Login</a></li>
+        <li class="nav-cta-mobile"><a href="register.html" class="btn btn-primary btn-full">Get Started</a></li>
+      </ul>
+
+      <div class="nav-cta-desktop">
+        <a href="register.html" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HEADER BANNER -->
+    <section class="section" style="background-color: var(--primary-tint); border-bottom: 1px solid var(--border-green); text-align: center; padding: 60px 0;">
+      <div class="container animate-fade-in">
+        <span class="badge">Secure Checkout</span>
+        <h1 style="margin-top: 14px; margin-bottom: 12px;">Complete Your Subscription</h1>
+        <p style="max-width: 580px; margin: 0 auto;">Finalize your Optivize AI plan selection and start automating workflows immediately.</p>
+      </div>
+    </section>
+
+    <!-- CHECKOUT 2-COLUMN SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2 checkout-container" style="gap: 32px; align-items: start;">
+          
+          <!-- Column 1: Order Summary Card with HTML Table -->
+          <div class="card animate-fade-in">
+            <h3 style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+              <span>🛒 Order Summary</span>
+            </h3>
+
+            <div class="table-responsive">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Product / Module</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <strong style="color: var(--text-main);">Pro Business Plan</strong><br>
+                      <span style="font-size: 0.8rem; color: var(--text-light);">Monthly recurring subscription</span>
+                    </td>
+                    <td>1</td>
+                    <td>$49.00</td>
+                    <td>$49.00</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Predictive Analytics Add-on</strong><br>
+                      <span style="font-size: 0.8rem; color: var(--text-light);">High-confidence ML forecasting</span>
+                    </td>
+                    <td>1</td>
+                    <td>$15.00</td>
+                    <td>$15.00</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>24/7 SLA Support Module</strong><br>
+                      <span style="font-size: 0.8rem; color: var(--text-light);">15-min priority queue access</span>
+                    </td>
+                    <td>1</td>
+                    <td>$10.00</td>
+                    <td>$10.00</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" style="text-align: right; font-weight: 600;">Estimated Tax (0% Demo):</td>
+                    <td>$0.00</td>
+                  </tr>
+                  <tr class="total-row">
+                    <td colspan="3" style="text-align: right;">Grand Total:</td>
+                    <td style="color: var(--primary-hover); font-size: 1.25rem;">$74.00 / mo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div style="margin-top: 24px; padding: 16px; background-color: var(--primary-light); border-radius: 12px; border: 1px solid var(--border-green); display: flex; gap: 12px; align-items: center;">
+              <span style="font-size: 1.5rem;">🛡️</span>
+              <p style="font-size: 0.875rem; color: var(--text-main); font-weight: 500;">
+                All subscriptions include a <strong>14-day money-back guarantee</strong>. Cancel anytime with zero penalty.
+              </p>
+            </div>
+          </div>
+
+          <!-- Column 2: Payment Details Card -->
+          <div class="card animate-fade-in">
+            <h3 style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+              <span>💳 Payment Information</span>
+            </h3>
+
+            <form action="#" method="get" onsubmit="return false;">
+              <!-- Name on Card -->
+              <div class="form-group">
+                <label for="cardholder" class="form-label">Name on Card</label>
+                <input type="text" id="cardholder" name="cardholder" class="form-control" placeholder="Alex Morgan" required autocomplete="cc-name">
+              </div>
+
+              <!-- Card Number -->
+              <div class="form-group">
+                <label for="cardnumber" class="form-label">Credit or Debit Card Number</label>
+                <input type="text" id="cardnumber" name="cardnumber" class="form-control" placeholder="4532 •••• •••• 8892" maxlength="19" required autocomplete="cc-number">
+              </div>
+
+              <!-- Expiry & CVV Grid -->
+              <div class="grid grid-2" style="gap: 16px;">
+                <div class="form-group">
+                  <label for="expiry" class="form-label">Expiry Date</label>
+                  <input type="text" id="expiry" name="expiry" class="form-control" placeholder="MM / YY" maxlength="5" required autocomplete="cc-exp">
+                </div>
+
+                <div class="form-group">
+                  <label for="cvv" class="form-label">CVV / CVC Code</label>
+                  <input type="password" id="cvv" name="cvv" class="form-control" placeholder="123" maxlength="4" required autocomplete="cc-csc">
+                </div>
+              </div>
+
+              <!-- Static Demo Notice -->
+              <div style="margin-bottom: 24px; padding: 12px 16px; background-color: var(--bg-subtle); border-radius: 10px; border: 1px solid var(--border-light);">
+                <p style="font-size: 0.825rem; color: var(--text-light); text-align: center;">
+                  📌 <em>Note: This is a static HTML5/CSS3 demonstration page — no real payment processing is executed.</em>
+                </p>
+              </div>
+
+              <!-- Pay Button -->
+              <button type="submit" class="btn btn-primary btn-full btn-lg">Pay $74.00 & Activate Subscription</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-logo-icon">O</div>
+            <span>Optivize AI</span>
+          </a>
+          <p>Supercharge your business operations with our enterprise-grade AI automation and predictive intelligence platform.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Twitter / X">𝕏</a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-btn" aria-label="GitHub">gh</a>
+            <a href="#" class="social-btn" aria-label="Discord">dc</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#features">AI Features</a></li>
+            <li><a href="services.html">Services Module</a></li>
+            <li><a href="payment.html">Subscription Pricing</a></li>
+            <li><a href="services.html">Enterprise AI</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Leadership Team</a></li>
+            <li><a href="legal.html">Legal & Compliance</a></li>
+            <li><a href="about.html#careers">Careers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="legal.html">Help Center</a></li>
+            <li><a href="services.html">24/7 Priority Support</a></li>
+            <li><a href="legal.html">Terms & Conditions</a></li>
+            <li><a href="legal.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="newsletter-box">
+          <h4 class="footer-col-title">Newsletter</h4>
+          <p>Stay ahead with the latest AI automation insights delivered weekly.</p>
+          <form class="newsletter-form" action="#" method="get" onsubmit="return false;">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary btn-full">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Optivize AI Technologies Inc. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="legal.html">Privacy Policy</a>
+          <a href="legal.html">Terms of Service</a>
+          <a href="legal.html">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

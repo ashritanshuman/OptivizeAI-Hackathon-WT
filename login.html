@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Log in to your Optivize AI dashboard portal to manage autonomous workflows and predictive metrics.">
+  <title>Customer Login — Optivize AI</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Header Nav -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Optivize AI Homepage">
+        <div class="brand-logo-icon">O</div>
+        <span>Optivize AI</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="payment.html" class="nav-link">Pricing</a></li>
+        <li><a href="login.html" class="nav-link active">Login</a></li>
+        <li class="nav-cta-mobile"><a href="register.html" class="btn btn-primary btn-full">Get Started</a></li>
+      </ul>
+
+      <div class="nav-cta-desktop">
+        <a href="register.html" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section flex-center" style="min-height: calc(100vh - 160px); padding-top: 60px; padding-bottom: 60px;">
+      <div class="container" style="max-width: 480px;">
+        
+        <div class="card animate-fade-in" style="padding: 40px 32px;">
+          <div style="text-align: center; margin-bottom: 28px;">
+            <div class="brand-logo-icon" style="margin: 0 auto 12px auto; width: 44px; height: 44px; font-size: 1.2rem;">O</div>
+            <h2>Welcome Back</h2>
+            <p style="font-size: 0.95rem; margin-top: 6px;">Access your Optivize AI autonomous dashboard</p>
+          </div>
+
+          <form action="#" method="get" onsubmit="return false;">
+            <!-- Email Input -->
+            <div class="form-group">
+              <label for="email" class="form-label">Work Email Address</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="alex.morgan@company.com" required autocomplete="email">
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" id="password" name="password" class="form-control" placeholder="••••••••••••" required autocomplete="current-password">
+            </div>
+
+            <!-- Remember Me & Forgot Password Links -->
+            <div class="form-footer-link" style="margin-bottom: 24px;">
+              <label class="form-checkbox-label" for="remember">
+                <input type="checkbox" id="remember" name="remember" class="form-checkbox">
+                <span>Remember me</span>
+              </label>
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-full btn-lg" style="margin-bottom: 20px;">Login to Dashboard</button>
+
+            <!-- Register Redirect -->
+            <p style="text-align: center; font-size: 0.9rem;">
+              Don't have an Optivize AI account? 
+              <a href="register.html" style="color: var(--primary-hover); font-weight: 700;">Create Account</a>
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-logo-icon">O</div>
+            <span>Optivize AI</span>
+          </a>
+          <p>Supercharge your business operations with our enterprise-grade AI automation and predictive intelligence platform.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Twitter / X">𝕏</a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-btn" aria-label="GitHub">gh</a>
+            <a href="#" class="social-btn" aria-label="Discord">dc</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Product</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#features">AI Features</a></li>
+            <li><a href="services.html">Services Module</a></li>
+            <li><a href="payment.html">Subscription Pricing</a></li>
+            <li><a href="services.html">Enterprise AI</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Leadership Team</a></li>
+            <li><a href="legal.html">Legal & Compliance</a></li>
+            <li><a href="about.html#careers">Careers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Support</h4>
+          <ul class="footer-links">
+            <li><a href="legal.html">Help Center</a></li>
+            <li><a href="services.html">24/7 Priority Support</a></li>
+            <li><a href="legal.html">Terms & Conditions</a></li>
+            <li><a href="legal.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="newsletter-box">
+          <h4 class="footer-col-title">Newsletter</h4>
+          <p>Stay ahead with the latest AI automation insights delivered weekly.</p>
+          <form class="newsletter-form" action="#" method="get" onsubmit="return false;">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary btn-full">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Optivize AI Technologies Inc. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="legal.html">Privacy Policy</a>
+          <a href="legal.html">Terms of Service</a>
+          <a href="legal.html">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
