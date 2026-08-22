@@ -1,11 +1,3 @@
-/* ==========================================================================
-   Optivize AI - Component Stylesheet (css/components.css)
-   Navbar, Footer, Buttons, Cards, Forms, Tables, Badges, Accordions
-   ========================================================================== */
-
-/* --------------------------------------------------------------------------
-   1. NAVBAR COMPONENT (Centered Pill Header with Pure CSS Mobile Menu)
-   -------------------------------------------------------------------------- */
 .header-nav {
   position: sticky;
   top: 0;
@@ -204,7 +196,7 @@
   background-color: #ffffff;
   color: #143321;
   border: 1px solid #e2e8f0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
 .btn-white:hover {
@@ -265,7 +257,8 @@
   color: rgba(255, 255, 255, 0.75);
 }
 
-.card-dark h3, .card-dark h4 {
+.card-dark h3,
+.card-dark h4 {
   color: #ffffff;
 }
 
@@ -330,6 +323,8 @@
   gap: 14px;
   height: 140px;
   padding-top: 10px;
+  width: 100%;
+  max-width: 240px;
 }
 
 .chart-bar-group {
@@ -344,13 +339,11 @@
 
 .bar-striped {
   width: 100%;
-  background: repeating-linear-gradient(
-    -45deg,
-    #dcfce7,
-    #dcfce7 4px,
-    #f0fdf4 4px,
-    #f0fdf4 8px
-  );
+  background: repeating-linear-gradient(-45deg,
+      #dcfce7,
+      #dcfce7 4px,
+      #f0fdf4 4px,
+      #f0fdf4 8px);
   border-radius: 6px 6px 0 0;
   border: 1px solid #bbf7d0;
 }
