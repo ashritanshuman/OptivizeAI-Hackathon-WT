@@ -19,7 +19,7 @@
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 0px;
+  gap: 2px;
   font-size: 1.35rem;
   font-weight: 800;
   color: #143321;
